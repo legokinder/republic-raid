@@ -1,0 +1,29 @@
+# Default-deny: explicitly list every file intended for public release.
+/*
+!/.gitignore
+!/README.md
+!/package.json
+!/config.example.json
+!/scripts/
+/scripts/*
+!/scripts/config.mjs
+!/scripts/check-browser.mjs
+!/scripts/raid-browser.mjs
+!/scripts/raid-status.mjs
+!/tests/
+/tests/*
+!/tests/config.test.mjs
+!/tests/raid-status.test.mjs
+
+# Runtime profiles, evidence, credentials, and agent logs stay local.
+.local/
+.tmp/
+.omx/
+.omc/
+.codex/
+.agents/
+.env
+.env.*
+node_modules/
+.DS_Store
+*.log
